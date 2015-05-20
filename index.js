@@ -6,6 +6,7 @@ module.exports = React.createClass({
 		return {
 			className: 'sticky',
 			computeWidth: true,
+			tag: "div",
 		};
 	},
 	componentDidMount: function() {
@@ -20,11 +21,9 @@ module.exports = React.createClass({
 		this.sticky.destroy();
 	},
 	render: function() {
-		return (
-			<div className={this.props.className}>
-				<div ref='primary'>{this.props.children}</div>
-				<div ref='placeholder'></div>
-			</div>
-		);
+		return React.createElement(this.props.tag, {className: this.props.className}, [
+				React.createElement(this.props.tag, {ref: 'primary', key: 0}, this.props.children),
+				React.createElement(this.props.tag, {ref: 'placeholder', key: 1})
+		]);
 	}
 });
