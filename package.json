@@ -1,7 +1,7 @@
 {
   "name": "react-sticky-position",
   "description": "React component that implements `position: sticky` behavior.",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "keywords": [
     "react-component",
     "react",
@@ -23,11 +23,6 @@
     "url": "http://github.com/jackmoore/react-sticky-position.git"
   },
   "dependencies": {
-    "sticky-position": "^0.0.1"
+    "sticky-position": "^1.0.0"
   },
-  "scripts": {
-    "major-release": "npm version major && npm publish && git push --follow-tags",
-    "minor-release": "npm version minor && npm publish && git push --follow-tags",
-    "patch-release": "npm version patch && npm publish && git push --follow-tags"
-  }
 }
