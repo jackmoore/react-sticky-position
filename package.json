@@ -1,15 +1,15 @@
 {
   "name": "react-sticky-position",
   "description": "React component that implements `position: sticky` behavior.",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "keywords": [
     "react-component",
     "react",
     "position: sticky",
     "sticky"
   ],
-  "peerDependencies": {
-    "react": ">=0.13.0"
+  "devDependencies": {
+    "react": ">=0.14.0-rc1"
   },
   "author": {
     "name": "Jack Moore",

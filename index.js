@@ -11,9 +11,9 @@ module.exports = React.createClass({
 	},
 	componentDidMount: function() {
 		this.sticky = stickyPosition({
-			primary: React.findDOMNode(this.refs.primary),
-			placeholder: React.findDOMNode(this.refs.placeholder),
-			wrapper: React.findDOMNode(this),
+			primary: this.refs.primary,
+			placeholder: this.refs.placeholder,
+			wrapper: this.refs.wrapper,
 			computeWidth: this.props.computeWidth,
 		})
 	},
@@ -21,7 +21,7 @@ module.exports = React.createClass({
 		this.sticky.destroy();
 	},
 	render: function() {
-		return React.createElement(this.props.tag, {className: this.props.className}, [
+		return React.createElement(this.props.tag, {ref: 'wrapper', className: this.props.className}, [
 				React.createElement(this.props.tag, {ref: 'primary', key: 0}, this.props.children),
 				React.createElement(this.props.tag, {ref: 'placeholder', key: 1})
 		]);
