@@ -23,6 +23,6 @@
     "url": "http://github.com/jackmoore/react-sticky-position.git"
   },
   "dependencies": {
-    "sticky-position": "^1.0.0"
+    "sticky-position": "^1.0.1"
   }
 }
