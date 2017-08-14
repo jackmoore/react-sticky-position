@@ -1,7 +1,8 @@
 var React = require('react');
 var stickyPosition = require('sticky-position');
+var createReactClass = require('create-react-class');
 
-module.exports = React.createClass({
+module.exports = createReactClass({
 	getDefaultProps: function() {
 		return {
 			className: 'sticky',
