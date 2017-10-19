@@ -1,7 +1,7 @@
 {
   "name": "react-sticky-position",
   "description": "React component that implements `position: sticky` behavior.",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "keywords": [
     "react-component",
     "react",
